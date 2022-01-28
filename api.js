@@ -21,13 +21,19 @@ export const urls = [
  * @param {string} url
  * @returns {!Promise<{data: string}>}
  */
-export function getJson(url) {
+export function getJson(url, debug) {
   return new Promise((resolve, reject) => {
     const index = urls.indexOf(url);
     if (index === -1) {
       reject(`unrecognized url ${url}`);
     }
+    if (debug) {
+      console.log(`${url} starts downloading`);
+    }
     setTimeout(() => {
+      if (debug) {
+        console.log(`${url} finishes downloading`);
+      }
       resolve({ data: texts[index] });
     }, delay[index]);
   });
