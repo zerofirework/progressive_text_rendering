@@ -10,11 +10,11 @@ Donec quis elementum orci. Aenean viverra, nisl eget tempus sodales, velit elit 
 const delay = [1000, 2000, 3500, 500, 1800];
 
 export const urls = [
-  'chapiter1.json',
-  'chapiter2.json',
-  'chapiter3.json',
-  'chapiter4.json',
-  'chapiter5.json',
+  "the_boy_who_lived.json",
+  "the_vanishing_glass.json",
+  "the_letters_from_no_one.json",
+  "the_keeper_of_the_keys.json",
+  "diagon_alley.json"
 ];
 
 /**
